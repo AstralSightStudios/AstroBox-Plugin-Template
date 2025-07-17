@@ -50,7 +50,8 @@ export default defineConfig({
 	plugins: [
 		new rspack.CopyRspackPlugin({
 			patterns: [
-				{ from: "manifest.json", to: "." }
+				{ from: "manifest.json", to: "." },
+				{ from: "icon.png", to:"." }
 			]
 		})
 	]
